@@ -4,3 +4,17 @@
     padding: 0;
 }
 
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child {
+    flex: 0 0 6.25%;
+    aspect-ratio: 1;
+}
+
+
