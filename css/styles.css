@@ -13,7 +13,17 @@
 }
 
 .child {
+    width: 6.25%;
+    height: 6.25%;
     flex: 0 0 6.25%;
+    
+}
+
+.dynamic-child {
+    flex: auto;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid;
 }
 
 
