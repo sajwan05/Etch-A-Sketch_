@@ -5,11 +5,18 @@ let number;
 
 button.addEventListener("click", (e) => {
     number = parseInt(prompt("Please enter the size of the grid: "));
+
      wrapper.textContent = "";
+
     for(let i = 0; i < (number * number); i++){
+        
         const div = document.createElement("div");
         div.classList.add("dynamic-child");
-        div.setAttribute("style", "border: 2px solid black;");
+
+        div.style.border = "1px solid black";
+        div.style.height = "2rem"
+        div.style.width = "2rem"
+        div.style.flex = `0 0 ${(100/number)}%`;
        
         wrapper.appendChild(div);
     }
@@ -20,12 +27,14 @@ button.addEventListener("click", (e) => {
 for(let i = 0; i < 256; i++){
     const div = document.createElement("div");
     div.classList.add("child");
-    div.setAttribute("style", "border: 2px solid black; width: 1rem; height:1rem;");
+    div.style.border = "2px solid black"
+    div.style.height = "2rem"
+    div.style.width = "2rem"
 
     wrapper.appendChild(div);
 }
 
-wrapper.addEventListener("mouseover", changeColor);
+wrapper.addEventListener("mousemove", changeColor);
 
 function changeColor(e){
     const target = e.target;
