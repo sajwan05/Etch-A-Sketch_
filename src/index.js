@@ -21,8 +21,8 @@ button.addEventListener("click", (e) => {
         wrapper.appendChild(div);
     }
 
-
 });
+
 
 for(let i = 0; i < 256; i++){
     const div = document.createElement("div");
@@ -39,7 +39,7 @@ wrapper.addEventListener("mousemove", changeColor);
 function changeColor(e){
     const target = e.target;
 
-    target.setAttribute("style", "background: #f00;");
+    target.style.background = "#f00";
 
 }
 
