@@ -40,13 +40,18 @@ for(let i = 0; i < 256; i++){
     wrapper.appendChild(div);
 }
 
-wrapper.addEventListener("mousemove", changeColor);
+wrapper.addEventListener("mouseover", changeColor);
 
 function changeColor(e){
     const target = e.target;
 
-    target.style.background = "#f00";
+    const bgColor = `rgb(${random(256)} ${random(256)} ${random(256)})`;
+
+    target.style.background = bgColor;
 
 }
 
+function random(number){
+    return Math.floor(Math.random() * number);
+}
 
