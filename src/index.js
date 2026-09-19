@@ -4,7 +4,13 @@ const button = document.querySelector(".sizeGrid");
 let number;
 
 button.addEventListener("click", (e) => {
-    number = parseInt(prompt("Please enter the size of the grid: "));
+
+    do{
+        number = parseInt(prompt("Please enter the size of the grid: "));
+    }while(number < 0 || number > 100);
+    
+    
+    
 
      wrapper.textContent = "";
 
