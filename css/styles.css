@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    text-align: center;
+}
+
 .wrapper {
     width: 960px;
     margin: 0 auto;
@@ -15,6 +19,16 @@
 .child {
     flex: 0 0 6.25%;
     
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 0.7em 2em;
+    display: inline-block;
+    margin-block: 3em;
+    cursor: pointer;
+    font-variant: small-caps;
+    font-weight: 700;
 }
 
 
